@@ -10,13 +10,14 @@ import AddNote from '../panel/AddNote';
 import IncidentDetails from '../panel/IncidentDetails';
 import IncidentMap from '../panel/IncidentMap';
 import IncidentList from '../panel/IncidentList';
+import Register from '../panel/Register';
 import { fetchMenu } from '../../framework/commands';
 
 export default {
-  login: true,
+  login: false,
   menu: true,
   footer: false,
-  landingPage: 'Map',
+  landingPage: 'Register',
   routes: {
     Map: {
       screen: WithScreenLoadActions(Map, {
@@ -40,6 +41,9 @@ export default {
     },
     SwitchTheme: {
       screen: SwitchTheme
+    },
+    Register: {
+      screen: Register
     }
   }
 };
